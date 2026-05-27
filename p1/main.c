@@ -1,5 +1,4 @@
-#include <print>
-
+#include <stdio.h>
 int main()
 {
     char arr[11];
@@ -21,6 +20,6 @@ int main()
                 result = *p;
         }
     }
-    printf("%c%d", result, max);
+    printf("%c %d", result, max);
     return 0;
 }
