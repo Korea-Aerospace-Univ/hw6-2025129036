@@ -13,15 +13,8 @@ int main()
     for (int *p = b; p < b + N; p++)
         scanf("%d", p);
     
-    int *p = a + N - 1;
-    int *q = b + N - 1;
-    
-    
-    while (p >= a){
+    for (int *p = a, *q = b + N -1; p < a + N; q--, p++)
         printf(" %d", *p + *q);
-    q--;
-    p--;
-    }
-    
+  
     return 0;
 }
